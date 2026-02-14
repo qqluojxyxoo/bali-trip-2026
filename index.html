@@ -172,12 +172,20 @@
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     position: relative;
+    background: #e5e5ea;
+  }
+  .map-container::before {
+    content: '地图加载中…';
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    font-size: 13px; color: #86868b; z-index: 0;
   }
   .map-container iframe {
     width: 100%;
     height: 280px;
     border: 0;
     display: block;
+    position: relative;
+    z-index: 1;
   }
   .map-nav-link {
     display: inline-flex;
@@ -426,6 +434,13 @@
         <div class="tl-time" style="color: var(--gold);">09:00 — 10:30</div>
         <div class="tl-title">🏛️ 科塔图阿 Kota Tua（老城区）</div>
         <div class="tl-desc">从 BNI City 打 Grab 约15分钟到达。这是雅加达最有历史感的区域，荷兰殖民时期的建筑群保存完好。逛 <em>法塔希拉广场 (Fatahillah Square)</em> 感受荷兰风情，外围有很多彩色涂鸦墙适合拍照。如果时间充裕可以进 <em>雅加达历史博物馆</em>（门票 5,000 IDR），了解这座城市400年的故事。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=BNI+City+Station,+Jakarta&daddr=Kota+Tua,+Jakarta&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=BNI+City+Station,+Jakarta&destination=Kota+Tua,+Jakarta&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-sight">🏛️ 景点</span><span class="tl-tag tag-culture">📸 拍照</span>
       </div>
 
@@ -440,6 +455,13 @@
         <div class="tl-time" style="color: var(--ocean);">11:30 — 13:00</div>
         <div class="tl-title">🕌 伊斯蒂克拉尔清真寺 + 雅加达大教堂</div>
         <div class="tl-desc">Grab 约15分钟。<em>伊斯蒂克拉尔清真寺 (Istiqlal Mosque)</em> 是东南亚最大的清真寺，气势恢宏，免费参观但需脱鞋。正对面就是 <em>雅加达大教堂 (Jakarta Cathedral)</em>，哥特式建筑很壮观。两种信仰和谐相邻，是雅加达宗教包容的象征，非常值得打卡。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Kota+Tua,+Jakarta&daddr=Istiqlal+Mosque,+Jakarta&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Kota+Tua,+Jakarta&destination=Istiqlal+Mosque,+Jakarta&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-sight">🕌 景点</span><span class="tl-tag tag-culture">🏛️ 文化</span>
       </div>
 
@@ -475,6 +497,13 @@
         <div class="tl-time" style="color: var(--gold);">21:30</div>
         <div class="tl-title">🚗 机场 → Amandaya Canggu</div>
         <div class="tl-desc">出机场后用 Grab 打车到仓古，约 40-50 分钟，费用约 150,000-200,000 IDR。注意：巴厘岛机场出租车区域有垄断，走出机场大楼外面再叫 Grab 会便宜很多。认准浅蓝色的 <em>Blue Bird</em> 出租车也靠谱。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Ngurah+Rai+International+Airport,+Bali&daddr=Amandaya+Canggu,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Ngurah+Rai+International+Airport,+Bali&destination=Amandaya+Canggu,+Bali&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-transport">🚗 打车</span><span class="tl-tag tag-tip">💡 省钱</span>
       </div>
 
@@ -631,6 +660,13 @@
         <div class="tl-time" style="color: var(--green);">13:30 — 15:00</div>
         <div class="tl-title">🌾 德格拉朗梯田 Tegalalang Rice Terraces</div>
         <div class="tl-desc">从乌布中心骑车约 20 分钟即到。这是巴厘岛最著名的梯田景观——层层叠叠的绿色稻田沿着山谷延伸，配上椰子树和远处的丛林，美得像一幅画。门票 25,000 IDR。走进梯田内部需要走不少台阶，穿舒适的鞋子。<br><br><strong>避坑提醒：</strong>梯田里有很多「自愿捐款」的人拦路要钱（10,000-20,000 IDR），这是半官方的收费，给了就行不用纠结。网红秋千（Bali Swing）就在附近但价格虚高（300,000-500,000 IDR），拍照排队也久，不太推荐——梯田本身就足够壮观了。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Ubud+Center,+Bali&daddr=Tegalalang+Rice+Terrace,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Ubud+Center,+Bali&destination=Tegalalang+Rice+Terrace,+Bali&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-sight">🌾 地标</span><span class="tl-tag tag-tip">💡 避坑</span>
       </div>
 
@@ -638,6 +674,13 @@
         <div class="tl-time" style="color: var(--ocean);">15:00 — 16:15</div>
         <div class="tl-title">🛕 圣泉寺 Tirta Empul</div>
         <div class="tl-desc">从梯田骑车约 15 分钟。这座建于公元 960 年的寺庙是巴厘岛最神圣的地方之一，以其 <em>净化仪式 (Melukat)</em> 闻名——信徒们在圣泉出水口依次接受泉水冲洗，祈求净化身心。你也可以参与（穿 Sarong 纱笼，入口可租 10,000 IDR），非常震撼的体验。门票 50,000 IDR。<br><br><strong>体验建议：</strong>从左到右依次经过每个出水口，双手合十低头让水冲过头顶。有两个出水口是「葬礼用」的，不要去（有标识）。水很凉，但精神上的感受很特别。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Tegalalang+Rice+Terrace,+Bali&daddr=Tirta+Empul+Temple,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Tegalalang+Rice+Terrace,+Bali&destination=Tirta+Empul+Temple,+Bali&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-culture">🛕 圣地</span><span class="tl-tag tag-sight">💦 体验</span>
       </div>
 
@@ -666,6 +709,13 @@
         <div class="tl-time" style="color: var(--pink);">19:30 — 21:00</div>
         <div class="tl-title">🛵 返程 · 乌布 → 仓古</div>
         <div class="tl-desc">天黑后骑摩托车要格外小心！巴厘岛乡间道路没有路灯，注意对向车辆。建议走主路 Jl. Raya Ubud → Jl. Raya Kediri 这条路，路况较好。如果觉得太累或不安全，完全可以叫一辆 Grab Car 回仓古（约 200,000 IDR），第二天再来取摩托车。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Ubud+Monkey+Forest,+Bali&daddr=Amandaya+Canggu,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Ubud+Monkey+Forest,+Bali&destination=Amandaya+Canggu,+Bali&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-transport">🛵 骑行</span><span class="tl-tag tag-tip">⚠️ 夜骑注意</span>
       </div>
 
@@ -756,6 +806,13 @@
         <div class="tl-time" style="color: var(--teal);">19:10 — 19:40</div>
         <div class="tl-title">🛒 TreVietNam-Ungasan / Ithon Mart ⭐ 首选超市</div>
         <div class="tl-desc">从乌鲁瓦图寺骑车约 10 分钟即到，地址：<em>Jl. Pura Batu Pageh No.48, Ungasan</em>（地图 App 搜索「TreVietNam-Ungasan」可直达）。这是一家深受当地华人和游客好评的综合超市，价格比游客区便宜不少。同一个地方还有一家越南餐厅。<br><br><strong>推荐采购：</strong>印尼零食（Indomie 方便面整箱带回、各种辣酱 Sambal）、巴厘岛本地咖啡豆、印尼精油和手工皂、Bintang 啤酒周边、水果干、虾片等伴手礼。比机场免税店便宜很多，种类也更全。一次性采购完所有伴手礼最合适。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Uluwatu+Temple,+Bali&daddr=Ithon+Mart+Ungasan,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Uluwatu+Temple,+Bali&destination=Ithon+Mart+Ungasan,+Bali&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-food">🛒 超市采购</span><span class="tl-tag tag-tip">⭐ 首选</span>
       </div>
 
@@ -763,6 +820,13 @@
         <div class="tl-time" style="color: var(--green);">19:45 — 21:00</div>
         <div class="tl-title">🦞 金巴兰海滩海鲜晚餐 Jimbaran Bay</div>
         <div class="tl-desc">从 Ungasan 骑车约 10 分钟到金巴兰海湾。这里的海滩上一字排开几十家海鲜大排档，桌子就摆在沙滩上，脚踩着沙子，听着海浪，吃炭火烤出的新鲜海鲜——这就是巴厘岛最经典的晚餐体验。<br><br>推荐点：<em>炭烤大虾、烤鱿鱼、烤鲷鱼</em>，配上巴厘岛特色的 <em>Sambal Matah</em>（生辣椒酱）和白米饭。两人一顿丰盛的海鲜晚餐约 400,000-600,000 IDR（180-270元），在国内吃同等品质要贵好几倍。随便挑一家看起来人多的 Warung 就行，味道差别不大。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Ithon+Mart+Ungasan,+Bali&daddr=Jimbaran+Bay,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Ithon+Mart+Ungasan,+Bali&destination=Jimbaran+Bay,+Bali&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-food">🦞 海鲜大餐</span><span class="tl-tag tag-beach">🏖️ 沙滩</span>
       </div>
 
@@ -770,6 +834,13 @@
         <div class="tl-time" style="color: var(--purple);">21:00 — 22:15</div>
         <div class="tl-title">🛵 返回仓古</div>
         <div class="tl-desc">金巴兰回仓古约 1 小时。走 <em>Jl. By Pass Ngurah Rai</em> 是最快的路线，路况好且有路灯。注意安全驾驶。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Jimbaran+Bay,+Bali&daddr=Amandaya+Canggu,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Jimbaran+Bay,+Bali&destination=Amandaya+Canggu,+Bali&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-transport">🛵 返程</span>
       </div>
 
@@ -826,6 +897,13 @@
         <div class="tl-time" style="color: var(--teal);">13:15 — 13:50</div>
         <div class="tl-title">🛒 Bintang Supermarket（水明漾店）</div>
         <div class="tl-desc">打 Grab 从仓古出发，约 15 分钟到达水明漾。地址：<em>Jl. Raya Seminyak No.17</em>。这是巴厘岛最大、最有名的连锁超市，两层楼，商品齐全。除了伴手礼之外，还可以买一些印尼本地零食（比如各种口味的 Tango 威化饼、Chitato 薯片、Max Tea 拉茶）、精油、护肤品等。如果在昨天 Ithon Mart 没买够，这里可以补货。价格公道，明码标价不用砍。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Amandaya+Canggu,+Bali&daddr=Bintang+Supermarket+Seminyak,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Amandaya+Canggu,+Bali&destination=Bintang+Supermarket+Seminyak,+Bali&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-food">🛒 超市</span><span class="tl-tag tag-sight">🛍️ 伴手礼</span>
       </div>
 
@@ -833,6 +911,13 @@
         <div class="tl-time" style="color: var(--pink);">14:00 — 14:40</div>
         <div class="tl-title">🛍️ Mal Bali Galeria（库塔购物中心）</div>
         <div class="tl-desc">从水明漾开车约 10 分钟即到。地址：<em>Jl. Bypass Ngurah Rai, Simpang Dewa Ruci, Kuta</em>。这是库塔最大的综合购物中心，有超市、品牌店、餐厅和电影院。一楼有 <em>Hypermart</em> 大超市，价格比 Bintang 更便宜一些，适合最后大批量扫货。购物中心紧邻机场方向的主路，逛完直接去机场非常顺路。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Bintang+Supermarket+Seminyak,+Bali&daddr=Mal+Bali+Galeria,+Kuta&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Bintang+Supermarket+Seminyak,+Bali&destination=Mal+Bali+Galeria,+Kuta&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-sight">🛍️ 购物中心</span>
       </div>
 
@@ -840,6 +925,13 @@
         <div class="tl-time" style="color: var(--green);">15:00</div>
         <div class="tl-title">🚗 前往机场</div>
         <div class="tl-desc">从 Mal Bali Galeria 到 Ngurah Rai 机场只要 <em>10 分钟</em>车程，非常近。打 Grab 约 30,000-50,000 IDR。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Mal+Bali+Galeria,+Kuta&daddr=Ngurah+Rai+International+Airport,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Mal+Bali+Galeria,+Kuta&destination=Ngurah+Rai+International+Airport,+Bali&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-transport">🚗 打车</span>
       </div>
 
@@ -882,6 +974,13 @@
         <div class="tl-time" style="color: var(--pink);">20:30（2月23日）</div>
         <div class="tl-title">🏨 入住 Hotel GranDhika Iskandarsyah</div>
         <div class="tl-desc">从机场 T2 叫 Grab 到酒店约 40-50 分钟（晚上不堵车），费用约 150,000-200,000 IDR。也可以搭机场快线 ARS 到 BNI City 站，再转 Grab 约 15 分钟到酒店。<br><br>酒店位于雅加达南区的 <em>Blok M</em> 商圈，地址：<em>Jl. Iskandarsyah Raya No.65</em>。已预订豪华间（高楼层、大床、安静房间、远离电梯），含早餐。预约到达时间 22:00-23:00。酒店电话：+628111090802。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Soekarno-Hatta+International+Airport+Terminal+2,+Jakarta&daddr=Hotel+GranDhika+Iskandarsyah,+Jakarta&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Soekarno-Hatta+International+Airport,+Jakarta&destination=Hotel+GranDhika+Iskandarsyah,+Jakarta&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-tip">🏨 已预订</span>
       </div>
 
@@ -902,6 +1001,13 @@
         <div class="tl-time" style="color: var(--gold);">10:30 — 12:00</div>
         <div class="tl-title">🏛️ 国家纪念碑 Monas + 独立广场</div>
         <div class="tl-desc">从酒店 Grab 约 20 分钟到达。<em>Monas (Monumen Nasional)</em>——132米高的国家纪念碑，顶部有35公斤纯金火焰，是雅加达的标志。门票 20,000 IDR，可以坐电梯到观景台俯瞰整个雅加达城市天际线。纪念碑坐落在 <em>独立广场 (Merdeka Square)</em> 中央，面积达80公顷，是世界上最大的城市广场之一。广场周围有总统府、国家博物馆等重要建筑。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Hotel+GranDhika+Iskandarsyah,+Jakarta&daddr=Monas,+Jakarta&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Hotel+GranDhika+Iskandarsyah,+Jakarta&destination=Monas,+Jakarta&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-sight">🏛️ 地标</span>
       </div>
 
@@ -923,6 +1029,13 @@
         <div class="tl-time" style="color: var(--purple);">15:00</div>
         <div class="tl-title">回酒店取行李 · 前往机场</div>
         <div class="tl-desc">Grab 回 Blok M 酒店取行李，然后前往苏加诺-哈达机场 T3。从酒店到机场约 45-60 分钟（注意下午可能堵车，留出余量）。也可以 Grab 到 <em>Blok M BNI MRT 站</em>（步行5分钟），搭 MRT 到 Dukuh Atas 站换乘 ARS 机场快线，全程约 1 小时，更可控。务必 16:30 前到达 T3 办理值机。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Hotel+GranDhika+Iskandarsyah,+Jakarta&daddr=Soekarno-Hatta+International+Airport+Terminal+3,+Jakarta&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Hotel+GranDhika+Iskandarsyah,+Jakarta&destination=Soekarno-Hatta+International+Airport,+Jakarta&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-transport">🚆 前往机场</span>
       </div>
 

@@ -162,6 +162,39 @@
     .day-header { flex-direction: column; align-items: flex-start; gap: 8px; }
     .overview h2, .tips-section h2 { font-size: 26px; }
     .tl-item { padding: 16px; }
+    .map-container iframe { height: 220px; }
+  }
+
+  /* ===== MAP EMBED ===== */
+  .map-container {
+    margin-top: 12px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    position: relative;
+  }
+  .map-container iframe {
+    width: 100%;
+    height: 280px;
+    border: 0;
+    display: block;
+  }
+  .map-nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #0071e3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  .map-nav-link:hover { background: #0077ed; }
+  .map-nav-link svg { width: 14px; height: 14px; fill: currentColor; }
   }
 
   /* ===== FLIGHT CARD ===== */
@@ -512,6 +545,13 @@
         <div class="tl-time" style="color: var(--gold);">16:00 — 16:30</div>
         <div class="tl-title">🛵 骑行前往海神庙 Tanah Lot</div>
         <div class="tl-desc">从仓古出发骑摩托车约 <em>20-25 分钟</em>即可到达海神庙。沿途经过稻田和村庄，路况良好。早点出发占个好位置看日落。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Amandaya+Canggu,+Bali&daddr=Tanah+Lot+Temple,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Amandaya+Canggu,+Bali&destination=Tanah+Lot+Temple,+Bali&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-transport">🛵 骑行</span>
       </div>
 
@@ -570,6 +610,13 @@
         <div class="tl-time" style="color: var(--teal);">11:00</div>
         <div class="tl-title">🛵 出发！仓古 → 乌布</div>
         <div class="tl-desc">骑上摩托车向东北方向出发。推荐走 <em>Jl. Raya Canggu → Jl. Raya Sempidi → Jl. Raya Ubud</em> 这条路线，比走高速更有风景。沿途会经过巴厘岛传统村庄，可以看到路边的神庙、石雕和供奉台。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Amandaya+Canggu,+Bali&daddr=Ubud+Monkey+Forest,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Amandaya+Canggu,+Bali&destination=Ubud+Monkey+Forest,+Bali&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-transport">🛵 骑行 1-1.5h</span>
       </div>
 
@@ -660,6 +707,13 @@
         <div class="tl-time" style="color: var(--ocean);">11:00</div>
         <div class="tl-title">🛵 出发！仓古 → 乌鲁瓦图</div>
         <div class="tl-desc">沿着海岸公路往南骑，经过水明漾 (Seminyak) 和金巴兰 (Jimbaran)，路上可以瞥见一段段美丽的海岸线。进入布基特半岛后地势抬高，路两边开始出现悬崖酒店和高端度假村。</div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?saddr=Amandaya+Canggu,+Bali&daddr=Single+Fin+Bali,+Uluwatu&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="map-nav-link" href="https://www.google.com/maps/dir/?api=1&origin=Amandaya+Canggu,+Bali&destination=Single+Fin+Bali,+Uluwatu&travelmode=driving" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          在 Google Maps 中导航
+        </a>
         <span class="tl-tag tag-transport">🛵 骑行 1.5-2h</span>
       </div>
 

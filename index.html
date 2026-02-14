@@ -155,6 +155,31 @@
     border-top: 1px solid #e5e5ea;
   }
 
+  /* ===== DESTINATION PHOTO ===== */
+  .tl-photo {
+    margin: 0 0 12px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  }
+  .tl-photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+  }
+  .tl-photo:hover img { transform: scale(1.03); }
+  .tl-photo .photo-credit {
+    font-size: 10px;
+    color: var(--text3);
+    text-align: right;
+    padding: 4px 8px;
+    background: var(--card);
+  }
+  .tl-photo .photo-credit a { color: var(--text3); text-decoration: none; }
+  .tl-photo .photo-credit a:hover { text-decoration: underline; }
+
   /* ===== RESPONSIVE ===== */
   @media (max-width: 600px) {
     .hero h1 { font-size: 32px; }
@@ -433,6 +458,10 @@
       <div class="tl-item tl-gold">
         <div class="tl-time" style="color: var(--gold);">09:00 — 10:30</div>
         <div class="tl-title">🏛️ 科塔图阿 Kota Tua（老城区）</div>
+        <div class="tl-photo">
+          <img src="https://images.unsplash.com/photo-1705221818019-894716a04892?w=800&h=400&fit=crop&q=80" alt="雅加达科塔图阿老城区 Fatahillah 广场" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">从 BNI City 打 Grab 约15分钟到达。这是雅加达最有历史感的区域，荷兰殖民时期的建筑群保存完好。逛 <em>法塔希拉广场 (Fatahillah Square)</em> 感受荷兰风情，外围有很多彩色涂鸦墙适合拍照。如果时间充裕可以进 <em>雅加达历史博物馆</em>（门票 5,000 IDR），了解这座城市400年的故事。</div>
         <div class="map-container">
           <iframe src="https://maps.google.com/maps?saddr=BNI+City+Station,+Jakarta&daddr=Kota+Tua,+Jakarta&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -454,6 +483,10 @@
       <div class="tl-item tl-ocean">
         <div class="tl-time" style="color: var(--ocean);">11:30 — 13:00</div>
         <div class="tl-title">🕌 伊斯蒂克拉尔清真寺 + 雅加达大教堂</div>
+        <div class="tl-photo">
+          <img src="https://plus.unsplash.com/premium_photo-1733277608427-78ea4d793430?w=800&h=400&fit=crop&q=80" alt="雅加达伊斯蒂克拉尔清真寺" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">Grab 约15分钟。<em>伊斯蒂克拉尔清真寺 (Istiqlal Mosque)</em> 是东南亚最大的清真寺，气势恢宏，免费参观但需脱鞋。正对面就是 <em>雅加达大教堂 (Jakarta Cathedral)</em>，哥特式建筑很壮观。两种信仰和谐相邻，是雅加达宗教包容的象征，非常值得打卡。</div>
         <div class="map-container">
           <iframe src="https://maps.google.com/maps?saddr=Kota+Tua,+Jakarta&daddr=Istiqlal+Mosque,+Jakarta&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -545,6 +578,10 @@
       <div class="tl-item tl-ocean">
         <div class="tl-time" style="color: var(--ocean);">11:00 — 12:30</div>
         <div class="tl-title">🏄 Batu Bolong 海滩 · 冲浪初体验</div>
+        <div class="tl-photo">
+          <img src="https://images.unsplash.com/photo-1564221549673-b43c122d1c29?w=800&h=400&fit=crop&q=80" alt="仓古 Batu Bolong 海滩冲浪" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">骑摩托车 5 分钟到达仓古最著名的冲浪海滩。这里浪不算太大，适合新手。海滩上有很多冲浪学校，<em>2小时冲浪课约 350,000 IDR</em>（含教练和冲浪板），如果有基础可以直接租板（50,000 IDR/小时）。就算不冲浪，坐在沙滩上看冲浪客踏浪也是一种享受。海滩面朝西，上午光线柔和，非常适合拍照。</div>
         <div class="map-container">
           <iframe src="https://maps.google.com/maps?saddr=Amandaya+Canggu,+Bali&daddr=Batu+Bolong+Beach,+Canggu,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -573,6 +610,10 @@
       <div class="tl-item tl-green">
         <div class="tl-time" style="color: var(--green);">13:30 — 15:00</div>
         <div class="tl-title">🌾 骑行穿越仓古稻田</div>
+        <div class="tl-photo">
+          <img src="https://images.unsplash.com/photo-1759559760480-869175e3fbfd?w=800&h=400&fit=crop&q=80" alt="仓古翠绿稻田" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">骑摩托车沿 <em>Jl. Subak Canggu</em>（仓古 Shortcut）穿行，这条小路两旁是大片翠绿稻田，是仓古最经典的骑行路线。路很窄，车速放慢，享受风吹稻浪的感觉。中途会经过一些艺术涂鸦墙和小神庙，随时停下拍照。终点可以到 <em>Canggu Shortcut 稻田观景点</em>，这里是 Instagram 上仓古最火的打卡地——绿色稻田配远处的椰子树，构图绝佳。</div>
         <div class="map-container">
           <iframe src="https://maps.google.com/maps?saddr=Hungry+Bird+Coffee,+Canggu,+Bali&daddr=Canggu+Shortcut,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -608,6 +649,10 @@
       <div class="tl-item tl-sunset">
         <div class="tl-time" style="color: var(--sunset);">16:30 — 18:30</div>
         <div class="tl-title">⛩️ 海神庙 Tanah Lot · 巴厘岛第一场日落</div>
+        <div class="tl-photo">
+          <img src="https://images.unsplash.com/photo-1734546862643-4a9c4c32d42c?w=800&h=400&fit=crop&q=80" alt="海神庙 Tanah Lot 日落" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">门票 60,000 IDR。<em>海神庙</em>是巴厘岛最具标志性的景点之一——一座建在海中岩石上的印度教寺庙，涨潮时被海水环绕，退潮时可以走到寺庙底部。日落时分（约 18:40）是最壮观的时刻：太阳从寺庙侧后方沉入印度洋，天空被染成金红色，寺庙的黑色剪影映衬其中。建议在悬崖上方的观景平台找一个面朝西的位置，这里的角度最佳。寺庙底部的岩洞里有一眼淡水泉，当地人认为是圣水。周围还有几座小庙可以逛。</div>
         <span class="tl-tag tag-sight">⛩️ 地标</span><span class="tl-tag tag-culture">🌅 日落</span>
       </div>
@@ -687,6 +732,10 @@
       <div class="tl-item tl-green">
         <div class="tl-time" style="color: var(--green);">13:30 — 15:00</div>
         <div class="tl-title">🌾 德格拉朗梯田 Tegalalang Rice Terraces</div>
+        <div class="tl-photo">
+          <img src="https://images.unsplash.com/photo-1746106424334-a0f652d81cde?w=800&h=400&fit=crop&q=80" alt="德格拉朗梯田" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">从乌布中心骑车约 20 分钟即到。这是巴厘岛最著名的梯田景观——层层叠叠的绿色稻田沿着山谷延伸，配上椰子树和远处的丛林，美得像一幅画。门票 25,000 IDR。走进梯田内部需要走不少台阶，穿舒适的鞋子。<br><br><strong>避坑提醒：</strong>梯田里有很多「自愿捐款」的人拦路要钱（10,000-20,000 IDR），这是半官方的收费，给了就行不用纠结。网红秋千（Bali Swing）就在附近但价格虚高（300,000-500,000 IDR），拍照排队也久，不太推荐——梯田本身就足够壮观了。</div>
         <div class="map-container">
           <iframe src="https://maps.google.com/maps?saddr=Ubud+Center,+Bali&daddr=Tegalalang+Rice+Terrace,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -701,6 +750,10 @@
       <div class="tl-item tl-ocean">
         <div class="tl-time" style="color: var(--ocean);">15:00 — 16:15</div>
         <div class="tl-title">🛕 圣泉寺 Tirta Empul</div>
+        <div class="tl-photo">
+          <img src="https://images.unsplash.com/photo-1704253411849-099f8bff9e4d?w=800&h=400&fit=crop&q=80" alt="圣泉寺 Tirta Empul 净化仪式" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">从梯田骑车约 15 分钟。这座建于公元 960 年的寺庙是巴厘岛最神圣的地方之一，以其 <em>净化仪式 (Melukat)</em> 闻名——信徒们在圣泉出水口依次接受泉水冲洗，祈求净化身心。你也可以参与（穿 Sarong 纱笼，入口可租 10,000 IDR），非常震撼的体验。门票 50,000 IDR。<br><br><strong>体验建议：</strong>从左到右依次经过每个出水口，双手合十低头让水冲过头顶。有两个出水口是「葬礼用」的，不要去（有标识）。水很凉，但精神上的感受很特别。</div>
         <div class="map-container">
           <iframe src="https://maps.google.com/maps?saddr=Tegalalang+Rice+Terrace,+Bali&daddr=Tirta+Empul+Temple,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -715,6 +768,10 @@
       <div class="tl-item tl-purple">
         <div class="tl-time" style="color: var(--purple);">16:30 — 17:30</div>
         <div class="tl-title">🐒 乌布猴林 Sacred Monkey Forest</div>
+        <div class="tl-photo">
+          <img src="https://images.unsplash.com/photo-1643483699807-eea07b462820?w=800&h=400&fit=crop&q=80" alt="乌布猴林中的猕猴" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">骑车回乌布中心约 25 分钟。这片 12.5 公顷的原始森林里生活着约 1200 只长尾猕猴，古老的印度教寺庙和巨大的榕树交织其中，光影斑驳，氛围神秘。门票 80,000 IDR。<br><br><strong>注意：</strong>猴子非常狡猾！不要带食物进去（它们闻得到），帽子、墨镜、耳环都可能被抢。手机拿稳。不要直视猴子的眼睛（它们认为这是挑衅）。不要试图摸小猴子，母猴会攻击。话虽如此，大部分猴子其实很可爱且习惯了游客，只是要注意防范个别「惯犯」。</div>
         <div class="map-container">
           <iframe src="https://maps.google.com/maps?saddr=Tirta+Empul+Temple,+Bali&daddr=Ubud+Monkey+Forest,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -812,6 +869,10 @@
       <div class="tl-item tl-ocean">
         <div class="tl-time" style="color: var(--ocean);">14:00 — 15:30</div>
         <div class="tl-title">🏖️ Suluban Beach（蓝点海滩）</div>
+        <div class="tl-photo">
+          <img src="https://images.unsplash.com/photo-1636619306699-2d27a100605e?w=800&h=400&fit=crop&q=80" alt="蓝点海滩 Suluban Beach 悬崖与海水" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">从 Single Fin 骑车 5 分钟。这是乌鲁瓦图最独特的海滩——需要穿过一个天然岩洞才能到达。洞口光影变幻，像进入另一个世界。海滩不大但被高耸的悬崖环抱，海水湛蓝见底。这里是巴厘岛最顶级的冲浪点之一（浪大，不适合游泳新手），但光是在岩洞里看海浪涌入就够震撼了。洞口的咖啡馆可以坐着发呆。</div>
         <div class="map-container">
           <iframe src="https://maps.google.com/maps?saddr=Single+Fin+Bali,+Uluwatu&daddr=Suluban+Beach,+Uluwatu,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -826,6 +887,10 @@
       <div class="tl-item tl-gold">
         <div class="tl-time" style="color: var(--gold);">15:30 — 17:00</div>
         <div class="tl-title">⛩️ 乌鲁瓦图寺 Pura Luhur Uluwatu</div>
+        <div class="tl-photo">
+          <img src="https://images.unsplash.com/photo-1531895423581-6b72ebb325de?w=800&h=400&fit=crop&q=80" alt="乌鲁瓦图寺悬崖与印度洋" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">巴厘岛六大圣庙之一，建在 70 米高的悬崖顶端，三面环海，气势磅礴。门票 50,000 IDR（含 Sarong 租借）。寺庙本身规模不大，但悬崖边的步道风景绝美——脚下是无尽的蓝色大海和白色浪花，远处可以看到整个南海岸线。<br><br><strong>猴子警告：</strong>这里的猴子比猴林的还猖狂！它们会抢墨镜、帽子、手机、水瓶——任何闪亮的、松散的东西。把所有东西收进包里拉好拉链。真被抢了的话，工作人员会用食物跟猴子「交换」帮你拿回来。</div>
         <div class="map-container">
           <iframe src="https://maps.google.com/maps?saddr=Suluban+Beach,+Uluwatu,+Bali&daddr=Uluwatu+Temple,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -847,6 +912,10 @@
       <div class="tl-item tl-sunset">
         <div class="tl-time" style="color: var(--sunset);">18:00 — 19:00</div>
         <div class="tl-title">🔥 Kecak 火舞 · 悬崖日落</div>
+        <div class="tl-photo">
+          <img src="https://images.unsplash.com/photo-1749229080744-0bd9dbeab0c3?w=800&h=400&fit=crop&q=80" alt="乌鲁瓦图 Kecak 火舞表演" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">这是巴厘岛最震撼的文化体验，没有之一。上百名男性表演者围坐成同心圆，不用任何乐器，仅凭人声合唱「恰克恰克恰克」的节奏，配合印度史诗《罗摩衍那》的故事表演。高潮是火舞环节——表演者在火焰中跳跃翻滚。而这一切的背景，是乌鲁瓦图悬崖上缓缓沉入印度洋的日落。整个场面如梦似幻，起鸡皮疙瘩的那种震撼。一定不要错过。</div>
         <span class="tl-tag tag-culture">🔥 必看</span><span class="tl-tag tag-sight">🌅 日落</span>
       </div>
@@ -868,6 +937,10 @@
       <div class="tl-item tl-green">
         <div class="tl-time" style="color: var(--green);">19:45 — 21:00</div>
         <div class="tl-title">🦞 金巴兰海滩海鲜晚餐 Jimbaran Bay</div>
+        <div class="tl-photo">
+          <img src="https://images.unsplash.com/photo-1764397576330-990165435219?w=800&h=400&fit=crop&q=80" alt="金巴兰海滩日落海鲜晚餐" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">从 Ungasan 骑车约 10 分钟到金巴兰海湾。这里的海滩上一字排开几十家海鲜大排档，桌子就摆在沙滩上，脚踩着沙子，听着海浪，吃炭火烤出的新鲜海鲜——这就是巴厘岛最经典的晚餐体验。<br><br>推荐点：<em>炭烤大虾、烤鱿鱼、烤鲷鱼</em>，配上巴厘岛特色的 <em>Sambal Matah</em>（生辣椒酱）和白米饭。两人一顿丰盛的海鲜晚餐约 400,000-600,000 IDR（180-270元），在国内吃同等品质要贵好几倍。随便挑一家看起来人多的 Warung 就行，味道差别不大。</div>
         <div class="map-container">
           <iframe src="https://maps.google.com/maps?saddr=Ithon+Mart+Ungasan,+Bali&daddr=Jimbaran+Bay,+Bali&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -1049,6 +1122,10 @@
       <div class="tl-item tl-gold">
         <div class="tl-time" style="color: var(--gold);">10:30 — 12:00</div>
         <div class="tl-title">🏛️ 国家纪念碑 Monas + 独立广场</div>
+        <div class="tl-photo">
+          <img src="https://images.unsplash.com/photo-1744853930671-1b97ecbd8fc7?w=800&h=400&fit=crop&q=80" alt="雅加达国家纪念碑 Monas" loading="lazy">
+          <div class="photo-credit">Photo by <a href="https://unsplash.com" target="_blank">Unsplash</a></div>
+        </div>
         <div class="tl-desc">从酒店 Grab 约 20 分钟到达。<em>Monas (Monumen Nasional)</em>——132米高的国家纪念碑，顶部有35公斤纯金火焰，是雅加达的标志。门票 20,000 IDR，可以坐电梯到观景台俯瞰整个雅加达城市天际线。纪念碑坐落在 <em>独立广场 (Merdeka Square)</em> 中央，面积达80公顷，是世界上最大的城市广场之一。广场周围有总统府、国家博物馆等重要建筑。</div>
         <div class="map-container">
           <iframe src="https://maps.google.com/maps?saddr=Hotel+GranDhika+Iskandarsyah,+Jakarta&daddr=Monas,+Jakarta&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

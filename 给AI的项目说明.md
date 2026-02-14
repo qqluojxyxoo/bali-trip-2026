@@ -8,6 +8,58 @@
 
 这个项目只有一个核心文件：`index.html`。纯 HTML + 内联 CSS，无外部依赖，无 JavaScript。文件名不可更改。
 
+## Google Maps 地图嵌入
+
+页面内几乎所有涉及出行（A→B）的时间线项目都嵌入了 Google Maps iframe 和导航跳转链接。
+
+### 技术方案
+
+- **iframe 嵌入**：`<iframe src="https://maps.google.com/maps?saddr=起点&daddr=终点&output=embed">`
+- **导航链接**：`<a href="https://www.google.com/maps/dir/?api=1&origin=起点&destination=终点&travelmode=driving">`
+- **样式**：`.map-container` 圆角14px + 阴影，高度280px（移动端220px），灰底加载占位文字"地图加载中…"
+- **加载优化**：所有 iframe 带 `loading="lazy"` 懒加载属性
+
+### 已嵌入地图的位置（共 24 处）
+
+**D0（雅加达半日游）：**
+1. BNI City 站 → 科塔图阿 Kota Tua
+2. 科塔图阿 → 伊斯蒂克拉尔清真寺
+3. 巴厘岛机场 → Amandaya Canggu
+
+**D1（仓古 + 海神庙）：**
+4. 酒店 → Batu Bolong 海滩（冲浪）
+5. Batu Bolong 海滩 → Hungry Bird Coffee（早午餐）
+6. Hungry Bird Coffee → Canggu Shortcut（稻田骑行）
+7. 酒店 → 海神庙 Tanah Lot（骑行前往）
+8. 海神庙 → The Lawn Canggu（晚餐）
+
+**D2（乌布文化之旅）：**
+9. 酒店 → 乌布猴林（出发）
+10. 乌布中心 → 德格拉朗梯田
+11. 德格拉朗梯田 → 圣泉寺
+12. 圣泉寺 → 乌布猴林
+13. 乌布猴林 → 酒店（返程）
+
+**D3（乌鲁瓦图）：**
+14. 酒店 → Single Fin（出发）
+15. Single Fin → Suluban Beach（蓝点海滩）
+16. Suluban Beach → 乌鲁瓦图寺
+17. 乌鲁瓦图寺 → Ithon Mart（超市采购）
+18. Ithon Mart → 金巴兰海滩（海鲜晚餐）
+19. 金巴兰 → 酒店（返程）
+
+**D4（告别巴厘岛）：**
+20. 酒店 → Bintang Supermarket
+21. Bintang → Mal Bali Galeria
+22. Mal Bali Galeria → 机场
+
+**D5（雅加达一日游）：**
+23. 机场 T2 → Hotel GranDhika
+24. 酒店 → Monas 国家纪念碑
+25. Monas → RM Sederhana（午餐）
+26. Monas → Grand Indonesia Mall
+27. 酒店 → 机场 T3（返程）
+
 ## 部署方式
 
 - GitHub 仓库：https://github.com/qqluojxyxoo/bali-trip-2026
@@ -136,7 +188,9 @@
 ## 修改注意事项
 
 - 所有内容在一个 `index.html` 文件内，含内联 CSS
-- 无外部 JS 依赖，纯静态页面
+- 无外部 JS 依赖，纯静态页面（Google Maps iframe 除外）
 - 修改后务必 `git commit + git push`，Vercel 会自动部署
 - 巴厘岛2月日落时间约 18:40（已校正）
 - 价格单位为 IDR（印尼盾），汇率参考：1 CNY ≈ 2,200 IDR
+- Google Maps iframe 加载较慢属正常现象，已添加懒加载和加载占位优化
+- 添加地图时使用 `.map-container` + `.map-nav-link` 已有样式，保持统一
